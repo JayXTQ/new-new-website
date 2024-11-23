@@ -59,6 +59,6 @@ From here, it should make a new resource for you, but wait for the initial setup
 
 When you save these changes and click `Restart` in the top right, the app should deploy successfully. Make sure to check the logs on the left hand side actively to check there are no errors which have stopped the app or otherwise. If no errors (hopefully) then load up the app url, and you should be able to see the login page!
 
-Sadly this is not the end of the setup, but this next part is and it's simple! User creation, there is no default user with Pterodactyl or Pyrodactyl so you will need to create one. Go to <BetterQuotes>Terminal</BetterQuotes> up at the top and open up the terminal for the panel. Now you will here create a user like you would normally. Run `php artisan p:user:make` and fill out the options and make sure they are admin!
+Sadly this is not the end of the setup, but this next part is and it's simple! User creation, there is no default user with Pterodactyl or Pyrodactyl so you will need to create one. Go to `Terminal` up at the top and open up the terminal for the panel. Now you will here create a user like you would normally. Run `php artisan p:user:make` and fill out the options and make sure they are admin!
 
 And that's it! You have successfully installed Pyrodactyl on Coolify using the docker-compose method. If you have any issues, please refer to the Pyrodactyl/Pterodactyl documentation or join the relevant Discords they have. Thanks for reading!

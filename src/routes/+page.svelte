@@ -99,7 +99,7 @@ Everything that I make as a personal project I try to open-source with licenses 
             <HeadingBox title="Guides" size="text-[16px]" class="h-[106px] w-[685px]">
                 <div class="flex gap-[7px] -mt-2 -ml-2.5 w-full">
                     {#each guides as guide}
-                        <a href="/guides/${guide.slug}" class="border-2 rounded-[13px] border-[#8A8A8A] flex items-center w-[179px] h-[76px] p-3 gap-[11px] flex-shrink-0">
+                        <a href="/guides/{guide.slug}" class="border-2 rounded-[13px] border-[#8A8A8A] flex items-center w-[179px] h-[76px] p-3 gap-[11px] flex-shrink-0">
                             <p>{guide.title}</p>
                         </a>
                     {/each}
