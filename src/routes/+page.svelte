@@ -36,6 +36,10 @@
     ]
 
     const guides = data.posts
+
+    function isValidImageUrl(url: string): boolean {
+        return /\.(jpg|jpeg|png|gif|bmp|webp)$/i.test(url);
+    }
 </script>
 
 <SvelteSeo
@@ -82,20 +86,28 @@
                     {/if}
                 </div>
             {/snippet}
-            {#if $lanyard}
-                {@const activities = $lanyard.activities.filter(act => act.id !== "custom")}
-                <div class="flex gap-[18px] h-full items-center">
-                    {#if activities[0] && activities[0].assets}
-                        <img src="https://media.discordapp.net/external/{(activities[0].assets.small_image || activities[0].assets.large_image).replace('mp:external/', '')}" alt="Activity" class="w-[60px] h-[60px]" />
-                        <div>
-                            <p>On {activities[0].name}</p>
-                            <p>{activities[0].state}</p>
-                        </div>
-                    {:else}
-                        <p>nothing rn</p>
-                    {/if}
-                </div>
-            {/if}
+            <div class="overflow-y-clip h-[70px]">
+                {#if $lanyard}
+                    {@const activities = $lanyard.activities.filter(act => act.id !== "custom")}
+                    <div class="flex gap-[18px] h-full items-center">
+                        {#if activities[0] && activities[0].assets}
+                            {#if activities[0].assets}
+                                {#if activities[0].assets.small_image && isValidImageUrl(activities[0].assets.small_image)}
+                                    <img src="https://media.discordapp.net/external/{activities[0].assets.small_image.replace('mp:external/', '')}" alt="Activity" class="w-[60px] h-[60px]" />
+                                {:else if activities[0].assets.large_image && isValidImageUrl(activities[0].assets.large_image)}
+                                    <img src="https://media.discordapp.net/external/{activities[0].assets.large_image.replace('mp:external/', '')}" alt="Activity" class="w-[60px] h-[60px]" />
+                                {/if}
+                            {/if}
+                            <div>
+                                <p>On {activities[0].name}</p>
+                                <p>{activities[0].state} - {activities[0].details}</p>
+                            </div>
+                        {:else}
+                            <p>nothing rn</p>
+                        {/if}
+                    </div>
+                {/if}
+            </div>
         </HeadingBox>
     </div>
     <HeadingBox title="About me" class="xl:max-w-[750px] w-full h-auto lg:h-[587px]">
