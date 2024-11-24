@@ -8,6 +8,7 @@
     import Kofi from "$lib/components/Kofi.svelte";
     import CSharp from "$lib/components/CSharp.svelte";
     import Typescript from "$lib/components/Typescript.svelte";
+    import SvelteSeo from "svelte-seo";
     import type { PageData } from './$types';
 
     const lanyard = useLanyard("618689346828238848");
@@ -36,6 +37,19 @@
 
     const guides = data.posts
 </script>
+
+<SvelteSeo
+    title="Jay's Website"
+    description="My silly website"
+    keywords="jay, jxtq, jayxtq, discordlab, friday, enka.discord, enka.cards, developer, website"
+    openGraph={{
+        title: "Jay's Website",
+        description: "My silly website",
+        url: "https://jxtq.moe",
+        type: "website",
+        site_name: "Jay's Website"
+    }}
+/>
 
 <div class="bg-black min-h-screen">
     <div class="text-white min-h-screen flex items-center justify-center">

@@ -2,11 +2,25 @@
     import type { PageData } from './$types';
     import {formatDate} from "$lib/utils";
     import HeadingBox from "$lib/components/HeadingBox.svelte";
+    import SvelteSeo from "svelte-seo";
 
     let { data }: {
         data: PageData;
     } = $props();
 </script>
+
+<SvelteSeo
+        title="Jay's Projects"
+        description="My projects on GitHub"
+        keywords="jay, jxtq, jayxtq, discordlab, friday, enka.discord, enka.cards, developer, website"
+        openGraph={{
+        title: "Jay's Projects",
+        description: "My projects on GitHub",
+        url: "https://jxtq.moe/projects",
+        type: "website",
+        site_name: "Jay's Website"
+    }}
+/>
 
 <div class="bg-black text-white min-h-screen flex items-center justify-center p-5">
     <HeadingBox title="Projects" class="max-h-[50rem] max-w-[100rem] w-full h-full">
