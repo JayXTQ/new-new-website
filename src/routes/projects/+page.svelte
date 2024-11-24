@@ -8,7 +8,7 @@
     } = $props();
 </script>
 
-<div class="bg-black text-white h-screen flex items-center justify-center">
+<div class="bg-black text-white min-h-screen flex items-center justify-center p-5">
     <HeadingBox title="Projects" class="max-h-[50rem] max-w-[100rem] w-full h-full">
         <div class="overflow-scroll h-full">
             <a href="/" class="float-right">Go back</a>
