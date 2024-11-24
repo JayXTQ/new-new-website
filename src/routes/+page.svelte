@@ -72,7 +72,16 @@
                 </div>
             {/if}
         </HeadingBox>
-        <HeadingBox title="Status" class="w-full h-[107px]">
+        <HeadingBox class="w-full h-[107px]">
+            {#snippet title()}
+                <div class="flex">
+                    Status
+                    {#if $lanyard && $lanyard.discord_status}
+                        {@const status = $lanyard.discord_status}
+                        <div class="w-3 h-3 rounded-full ml-2 my-auto" class:bg-[#23a55a]={status === "online"} class:bg-[#f0b232]={status === "idle"} class:bg-[#f23f43]={status === "dnd"} class:bg-[#2c2f33]={status === "offline"}></div>
+                    {/if}
+                </div>
+            {/snippet}
             {#if $lanyard}
                 {@const activities = $lanyard.activities.filter(act => act.id !== "custom")}
                 <div class="flex gap-[18px] h-full items-center">
