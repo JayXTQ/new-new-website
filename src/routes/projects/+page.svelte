@@ -22,7 +22,7 @@
     }}
 />
 
-<HeadingBox title="Projects" class="max-h-[50rem] max-w-[100rem] w-full h-full">
+<HeadingBox title="Projects" class="max-h-[50rem] max-w-[100rem] w-full h-full pb-5">
     <div class="overflow-y-scroll h-full mb-5">
         <a href="/" class="float-right">Go back</a>
         <div class="my-10 space-y-4">
