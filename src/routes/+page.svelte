@@ -21,17 +21,17 @@
         {
             name: "DiscordLab",
             icon: CSharp,
-            link: 'https://github.com/JayXTQ/DiscordLab'
+            link: 'https://github.com/LumiFae/DiscordLab'
         },
         {
             name: "Friday",
             icon: Typescript,
-            link: 'https://github.com/JayXTQ/Friday'
+            link: 'https://github.com/LumiFae/Friday'
         },
         {
             name: 'enka.discord',
             icon: Typescript,
-            link: 'https://github.com/JayXTQ/enka.discord'
+            link: 'https://github.com/LumiFae/enka.discord'
         }
     ]
 
@@ -43,15 +43,15 @@
 </script>
 
 <SvelteSeo
-    title="Jay's Website"
+    title="Lumi's Website"
     description="My silly website"
-    keywords="jay, jxtq, jayxtq, discordlab, friday, enka.discord, enka.cards, developer, website"
+    keywords="lumi, jxtq, lumifae, discordlab, friday, enka.discord, enka.cards, developer, website"
     openGraph={{
-        title: "Jay's Website",
+        title: "Lumi's Website",
         description: "My silly website",
         url: "https://jxtq.moe",
         type: "website",
-        site_name: "Jay's Website"
+        site_name: "Lumi's Website"
     }}
 />
 
@@ -64,7 +64,7 @@
                     <a href="mailto:me@jxtq.moe">
                         <Mail />
                     </a>
-                    <a href="https://github.com/JayXTQ">
+                    <a href="https://github.com/LumiFae">
                         <Github />
                     </a>
                     <a href="https://bsky.app/profile/jxtq.moe">
@@ -111,7 +111,7 @@
         </HeadingBox>
     </div>
     <HeadingBox title="About me" class="xl:max-w-[750px] w-full h-auto lg:h-[587px]">
-        <p class="whitespace-pre-wrap text-[20px] -mt-2">Hi, I’m Jay! Welcome to my website :3
+        <p class="whitespace-pre-wrap text-[20px] -mt-2">Hi, I’m Lumi! Welcome to my website :3
 
 I am a web developer from the UK who works full time as a cyber-security engineer and CTO.
 
