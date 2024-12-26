@@ -11,15 +11,15 @@
 </script>
 
 <SvelteSeo
-        title="{data.meta.title} - Jay's guides"
+        title="{data.meta.title} - Lumi's guides"
         description={data.meta.description}
-        keywords="jay, jxtq, jayxtq, discordlab, friday, enka.discord, enka.cards, developer, website"
+        keywords="lumi, jxtq, lumifae, discordlab, friday, enka.discord, enka.cards, developer, website"
         openGraph={{
-        title: `${data.meta.title} - Jay's guides`,
+        title: `${data.meta.title} - Lumi's guides`,
         description: data.meta.description,
         url: `https://jxtq.moe/guides/${data.meta.slug}`,
         type: "website",
-        site_name: "Jay's Website"
+        site_name: "Lumi's Website"
     }}
 />
 
