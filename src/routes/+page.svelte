@@ -21,7 +21,7 @@
         {
             name: "DiscordLab",
             icon: CSharp,
-            link: 'https://github.com/LumiFae/DiscordLab'
+            link: 'https://github.com/DiscordLabSCP/DiscordLab'
         },
         {
             name: "Friday",
